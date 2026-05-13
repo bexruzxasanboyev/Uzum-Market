@@ -5,11 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Uzum Market</title>
-    <link rel="preload" as="image" href="./images/speaker.avif" fetchpriority="high">
-    <link rel="preload" as="image" href="./images/money.avif">
-    <link rel="preload" as="image" href="./images/uzum.avif">
-    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
     <style>
      *{padding:0;margin:0;box-sizing:border-box}body{font-family:sans-serif;background-color:#000;color:#fff}html, body{overflow-x:hidden}.webinar{max-width:480px;width:100%;margin:0 auto;padding:16px 0 35px;text-align:center}.webinar__hero-wrap{padding:0 10px}.webinar__title{font-family:"Bebas Neue" , sans-serif;font-weight:400;font-size:clamp(21px, 9.1vw, 42px);line-height:1.2;text-transform:uppercase}.webinar__title span{background:linear-gradient(229.81deg, #FFDF70 .91%, #FFE9A6 47.68%, rgb(255 223 112 / .83) 94.44%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.webinar__img{width:clamp(240px, 82vw, 285px);height:auto;display:flex;margin:0 auto}.title{font-family:"Bebas Neue" , sans-serif;font-weight:400;font-size:40px;line-height:120%;text-align:center;text-transform:uppercase;color:white}
     </style>
@@ -18,32 +13,23 @@
         <link rel="stylesheet" href="./css/main.css" />
     </noscript>
 
-    <!-- Meta Pixel Code (deferred to idle for performance) -->
+    <!-- Meta Pixel Code -->
     <script>
-        window.addEventListener('load', function () {
-            var run = function () {
-                !function (f, b, e, v, n, t, s) {
-                    if (f.fbq) return; n = f.fbq = function () {
-                        n.callMethod ?
-                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                    };
-                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-                    n.queue = []; t = b.createElement(e); t.async = !0;
-                    t.src = v; s = b.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t, s)
-                }(window, document, 'script',
-                    'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '1488970306296025');
-                fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
-            if ('requestIdleCallback' in window) {
-                requestIdleCallback(run, { timeout: 3000 });
-            } else {
-                setTimeout(run, 2000);
-            }
-        });
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1488970306296025');
+        fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" alt=""
+    <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1488970306296025&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
@@ -52,10 +38,10 @@
     <main class="webinar">
         <section>
             <div style="position: relative;">
-                <img class="img1" src="./images/money.avif" fetchpriority="high" decoding="async" width="197" height="172"
+                <img class="img1" src="/images/money.avif" loading="lazy" decoding="async" width="197" height="172"
                     alt="money">
-                <img class="img2" src="./images/uzum.avif" fetchpriority="high" decoding="async" width="124" height="125"
-                    alt="uzum">
+                <img class="img2" src="/images/uzum.avif" loading="lazy" decoding="async" width="124" height="125"
+                    alt="money">
             </div>
             <p class="webinar__heading">Ism Familya</p>
             <h1 class="webinar__title">Jizzaxda turib Uzum market <br> orqali <span>0 dan birinchi 1000$ <br>
@@ -64,10 +50,10 @@
             </h1>
             <div class="webinar__hero">
                 <div class="webinar__hero-wrap">
-                    <img class="webinar__img" src="./images/speaker.avif" alt="speaker" fetchpriority="high" decoding="async"
+                    <img class="webinar__img" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
                         width="304" height="337">
                     <button class="webinar__hero-btn registerBtn" type="button">
-                        <img src="./images/button.avif" alt="button" decoding="async" width="332"
+                        <img src="./images/button.avif" alt="button" loading="lazy" decoding="async" width="332"
                             height="94">
                         <p>Ro’yxatdan o’tish</p>
                     </button>
