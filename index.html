@@ -6,115 +6,141 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Uzum Market</title>
     <style>
-        @font-face { font-family: "Italianno"; src: url(./fonts/Italianno-Regular.woff2); font-weight: 400; font-display: swap } @font-face { font-family: "Bebas Neue"; src: url(./fonts/BebasNeue.woff2); font-weight: 400; font-display: swap } html, body { overflow-x: hidden; } * { padding: 0; margin: 0; box-sizing: border-box } body { font-family: sans-serif; background-color: #000; color: #fff } .webinar { max-width: 480px; width: 100%; margin: 0 auto; padding: 16px 0 35px; text-align: center } .webinar__heading { font-family: "Italianno", cursive; font-weight: 400; font-size: 34px; line-height: 1; margin-bottom: 11px } .webinar__hero-wrap { padding: 0 20px } .webinar__title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: clamp(21px, 9.1vw, 42px); line-height: 1.2; margin-bottom: -20px; text-transform: uppercase; } .webinar__title span { background: linear-gradient(229.81deg, #FFDF70 .91%, #FFE9A6 47.68%, rgb(255 223 112/.83) 94.44%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text } .webinar__hero { position: relative } .webinar__img { width: clamp(240px, 82vw, 285px); height: auto; display: flex; margin: 0 auto } .webinar__hero-btn { max-width: 332px; width: 100%; border: none; background: 0 0; filter: drop-shadow(0 4px 24px rgb(255 233 166/.55)); display: flex; align-items: center; justify-content: center; margin: -1px auto 36px; cursor: pointer } .webinar__hero-btn img { max-width: 332px; width: 100%; height: auto } .webinar__hero-btn p { position: absolute; color: #000; font-family: "Bebas Neue", sans-serif; font-size: clamp(28px, 9vw, 34px); line-height: 1.2; letter-spacing: .05em; text-transform: uppercase } .webinar__hero-data { position: absolute; font-weight: 400; font-size: clamp(10px, 3.5vw, 12px); line-height: 1.3; text-align: left; padding-left: 5px; border-left: 1px solid #fff } .webinar__hero-data.time { left: 10%; top: 47% } .webinar__hero-data.data { right: 6%; top: 27% } .webinar__hero-data span { color: #FFE9A6; font-size: clamp(12px, 3.5vw, 14px) } .title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 40px; line-height: 120%; text-align: center; text-transform: uppercase; color: white; }
+     *{padding:0;margin:0;box-sizing:border-box}body{font-family:sans-serif;background-color:#000;color:#fff}html, body{overflow-x:hidden}.webinar{max-width:480px;width:100%;margin:0 auto;padding:16px 0 35px;text-align:center}.webinar__hero-wrap{padding:0 10px}.webinar__title{font-family:"Bebas Neue" , sans-serif;font-weight:400;font-size:clamp(21px, 9.1vw, 42px);line-height:1.2;text-transform:uppercase}.webinar__title span{background:linear-gradient(229.81deg, #FFDF70 .91%, #FFE9A6 47.68%, rgb(255 223 112 / .83) 94.44%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.webinar__img{width:clamp(240px, 82vw, 285px);height:auto;display:flex;margin:0 auto}.title{font-family:"Bebas Neue" , sans-serif;font-weight:400;font-size:40px;line-height:120%;text-align:center;text-transform:uppercase;color:white}
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
         <link rel="stylesheet" href="./css/main.css" />
     </noscript>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1488970306296025');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1488970306296025&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
     <main class="webinar">
-        <div style="position: relative;">
-            <img class="img1" src="/images/money.avif" loading="lazy" decoding="async" width="197" height="172" alt="money">
-            <img class="img2" src="/images/uzum.avif" loading="lazy" decoding="async" width="124" height="125" alt="money">
-        </div>
-        <p class="webinar__heading">Ism Familya</p>
-        <h1 class="webinar__title">Jizzaxda turib Uzum market <br> orqali <span>0 dan birinchi 1000$ <br>
-                daromadga</span> chiqish
+        <section>
+            <div style="position: relative;">
+                <img class="img1" src="/images/money.avif" loading="lazy" decoding="async" width="197" height="172"
+                    alt="money">
+                <img class="img2" src="/images/uzum.avif" loading="lazy" decoding="async" width="124" height="125"
+                    alt="money">
+            </div>
+            <p class="webinar__heading">Ism Familya</p>
+            <h1 class="webinar__title">Jizzaxda turib Uzum market <br> orqali <span>0 dan birinchi 1000$ <br>
+                    daromadga</span> chiqish
 
-        </h1>
-        <div class="webinar__hero">
-            <div class="webinar__hero-wrap">
-                <img class="webinar__img" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
-                    width="304" height="337">
-                <button class="webinar__hero-btn registerBtn" type="button">
-                    <img src="./images/button.avif" alt="button" loading="lazy" decoding="async" width="332"
-                        height="94">
-                    <p>Ro’yxatdan o’tish</p>
+            </h1>
+            <div class="webinar__hero">
+                <div class="webinar__hero-wrap">
+                    <img class="webinar__img" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
+                        width="304" height="337">
+                    <button class="webinar__hero-btn registerBtn" type="button">
+                        <img src="./images/button.avif" alt="button" loading="lazy" decoding="async" width="332"
+                            height="94">
+                        <p>Ro’yxatdan o’tish</p>
+                    </button>
+                    <p class="webinar__hero-data time"><span>20:30</span> <br> Vaqti</p>
+
+                    <p class="webinar__hero-data data"><span>15-16-17-May</span> <br> Kunlari</p>
+                </div>
+            </div>
+
+            <div class="webinar__body">
+                <div class="webinar-registration">
+                    <img class="webinar-icon__left" src="./images/fire.avif" alt="icon" loading="lazy" decoding="async"
+                        width="33" height="38">
+                    <img class="webinar-icon__right" src="./images/qumsoat.avif" alt="icon" loading="lazy"
+                        decoding="async" width="33" height="38">
+                    <h2 class="webinar-registration__title">JOYLAR SONI OZ QOLDI!</h2>
+                    <div class="webinar-registration__timer timer">
+                        <div class="timer__item">
+                            <p class="timer__number" id="minutes">02</p>
+                        </div>
+                        <div class="timer__separator">
+                            <p class="timer__symbol">:</p>
+                        </div>
+                        <div class="timer__item">
+                            <p class="timer__number" id="seconds">00</p>
+                        </div>
+                    </div>
+                    <p class="webinar-registration__subtitle">BEPUL Ro'yxatdan o'tishga ulguring!</p>
+                  
+                       <button class="webinar-registration__btn registerBtn" type="button">
+                        <img class="btn__icon" src="./images/button.avif" alt="btn" loading="lazy" decoding="async"
+                            width="242" height="54">
+                            
+                        <span class="btn__text">Ro’yxatdan o’tish</span>
+                    </button>
+                </div>
+
+
+                <h3 class="title">qatnashuvchilar <br>
+                    uchun sovg’a</h3>
+                <div class="webinar__gift">
+                    <img src="./images/gift.avif" loading="lazy" decoding="async" width="311" height="161" alt="gift">
+                    <div class="webinar__gift-min">
+                        <h4>Sovg’alar:</h4>
+                        <ul>
+                            <li>Yaxshi sotiladigan <br> tovarlar ro’yxati</li>
+                            <li>Xitoydan kursi</li>
+                            <li>Pinduodo kursi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="features">
+                <h4 class="features__title">Masterklassda siz:</h4>
+                <div class="features__container">
+                    <img class="features__image" src="./images/bgbottom.avif" alt="bg" loading="lazy" decoding="async"
+                        width="315" height="462">
+                    <div class="features__list">
+                        <div class="features__item">
+                            <span class="features__item-title">Onlayn</span>
+                            <p class="features__item-text">daromad yo’llari va boshqa <br> ketma ketligi</p>
+                        </div>
+                        <div class="features__divider"></div>
+                        <div class="features__item">
+                            <span class="features__item-title">doimiy</span>
+                            <p class="features__item-text">xarajatlaringizni qoplaydigan qo’shimcha daromad turi
+                            </p>
+                        </div>
+                        <div class="features__divider"></div>
+                        <div class="features__item">
+                            <span class="features__item-title">0 dan 500$</span>
+                            <p class="features__item-text">3000$ gacha pul topsa bo’ladigan <br> biznes turlarini
+                                o’ganasiz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="features__btn registerBtn" type="button">
+                    <img class="features__btn-img" src="./images/button.avif" alt="button" loading="lazy"
+                        decoding="async" width="332" height="94">
+                    <span class="features__btn-text">Ro’yxatdan o’tish</span>
                 </button>
-                <p class="webinar__hero-data time"><span>20:30</span> <br> Vaqti</p>
-
-                <p class="webinar__hero-data data"><span>15-16-17-May</span> <br> Kunlari</p>
             </div>
-        </div>
+        </section>
 
-        <div class="webinar__body">
-            <div class="webinar-registration">
-                <img class="webinar-icon__left" src="./images/fire.avif" alt="icon" loading="lazy" decoding="async"
-                    width="33" height="38">
-                     <img class="webinar-icon__right" src="./images/qumsoat.avif" alt="icon"
-                    loading="lazy" decoding="async" width="33" height="38">
-                <h2 class="webinar-registration__title">JOYLAR SONI OZ QOLDI!</h2>
-                <div class="webinar-registration__timer timer">
-                    <div class="timer__item">
-                        <p class="timer__number" id="minutes">02</p>
-                    </div>
-                    <div class="timer__separator">
-                        <p class="timer__symbol">:</p>
-                    </div>
-                    <div class="timer__item">
-                        <p class="timer__number" id="seconds">00</p>
-                    </div>
-                </div>
-                <p class="webinar-registration__subtitle">BEPUL Ro'yxatdan o'tishga ulguring!</p>
-                <button class="webinar-registration__btn registerBtn" type="button">
-                    <img class="btn__icon" src="./images/btn.avif" alt="btn" loading="lazy" decoding="async" width="242"
-                        height="54">
-                    <span class="btn__text">Ro’yxatdan o’tish</span>
-                </button>
-            </div>
-
-
-            <h3 class="title">qatnashuvchilar <br>
-                uchun sovg’a</h3>
-            <div class="webinar__gift">
-                <img src="./images/gift.avif" loading="lazy" decoding="async" width="311" height="161" alt="gift">
-                <div class="webinar__gift-min">
-                    <h3>Sovg’alar:</h3>
-                    <ul>
-                        <li>Yaxshi sotiladigan <br> tovarlar ro’yxati</li>
-                        <li>Xitoydan kursi</li>
-                        <li>Pinduodo kursi</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-
-        <div class="features">
-            <h2 class="features__title">Masterklassda siz:</h2>
-            <div class="features__container">
-                <img class="features__image" src="./images/bgbottom.avif" alt="bg" loading="lazy" decoding="async"
-                    width="315" height="462">
-                <div class="features__list">
-                    <div class="features__item">
-                        <h3 class="features__item-title">Onlayn</h3>
-                        <p class="features__item-text">daromad yo’llari va boshqa <br> ketma ketligi</p>
-                    </div>
-                    <div class="features__divider"></div>
-                    <div class="features__item">
-                        <h3 class="features__item-title">doimiy</h3>
-                        <p class="features__item-text">xarajatlaringizni qoplaydigan qo’shimcha daromad turi
-                        </p>
-                    </div>
-                    <div class="features__divider"></div>
-                    <div class="features__item">
-                        <h3 class="features__item-title">0 dan 500$</h3>
-                        <p class="features__item-text">3000$ gacha pul topsa bo’ladigan <br> biznes turlarini
-                            o’ganasiz
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button class="features__btn registerBtn" type="button">
-                <img class="features__btn-img" src="./images/button.avif" alt="button" loading="lazy" decoding="async"
-                    width="332" height="94">
-                <span class="features__btn-text">Ro’yxatdan o’tish</span>
-            </button>
-        </div>
-        
     </main>
     <div id="registrationModal" class="homeModal" style="display:none">
         <div class="homeModalOverlay"></div>
@@ -163,24 +189,6 @@
     </div>
     <script defer src="./js/phoneFormatter.js"></script>
     <script defer src="./js/app.js"></script>
-
-    <!-- Meta Pixel Code -->
-<script defer>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1488970306296025');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1488970306296025&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 
 </html>
